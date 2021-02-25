@@ -1,0 +1,20 @@
+table {
+    width: 80%;
+    }
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.contact-table {
+    height: 25em;
+    overflow: auto;
+    margin-left: 1em;
+}
+
+.button {
+    margin-top: 1em;
+   align-content: center
+}
+

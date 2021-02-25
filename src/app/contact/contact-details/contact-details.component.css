@@ -1,0 +1,43 @@
+ button {
+    margin-left: 8px;
+}
+
+.action-button-row, .add-activity-button {
+    float: right;
+    margin-left: 8px;
+
+}
+
+mat-form-field {
+    margin-right: 12px;
+    font-size: 13px;
+    width: 35%;
+}
+
+.form {
+    width: 80%;
+   
+    
+}
+
+.activities{
+    margin-top: 1em;
+}
+
+.table-container {
+    height: 150px;
+    overflow: auto;
+    margin-top: 2em;
+}
+
+
+table {
+    width: 100%;
+}
+
+.details {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 4em;
+
+}

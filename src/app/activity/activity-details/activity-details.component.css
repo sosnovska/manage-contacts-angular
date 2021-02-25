@@ -1,0 +1,33 @@
+.example-button-row button {
+    margin-left: 8px;
+}
+
+.action-button-row, .add-activity-button {
+    float: right;
+}
+
+mat-form-field {
+    margin-right: 12px;
+    font-size: 12px;
+    width: 35%;
+}
+
+.form {
+    margin: auto;
+    width: 80%;
+}
+
+.activities{
+    margin-top: 1em;
+}
+
+.table-container {
+    height: 150px;
+    overflow: auto;
+    margin-top: 2em;
+}
+
+
+table {
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+<div fxLayout="row" fxLayoutAlign="center none">
+    <div fxFlex="25%" ngxSplitArea>
+
+
+            <div class="contact-table">
+
+           <!--  <mat-form-field>
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+            </mat-form-field> -->
+                <table mat-table [dataSource]="dataSource">
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="name">
+                        <th mat-header-cell *matHeaderCellDef> Name </th>
+                        <td mat-cell *matCellDef="let element"> <button
+                                mat-button>{{element.firstName + ' ' + element.lastName}} </button></td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="openDetails(row)"></tr>
+                </table>
+            </div>
+
+            <footer>
+                <div class="button">
+                    <button mat-raised-button color="primary" (click)='add()'>Add Contact</button>
+                </div>  
+                </footer>
+            
+
+
+    </div>
+    <div fxFlex="75%" ngxSplitArea>
+       <!--  <mat-card> -->
+            <app-contact-details [id]="id" (updated)="onUpdated($event)"></app-contact-details>
+        <!-- </mat-card> -->
+    </div>
+</div>
